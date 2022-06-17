@@ -1,4 +1,4 @@
-# Tags Loops, Math
+# Tags Loops,Math
 # https://leetcode.com/problems/count-integers-with-even-digit-sum/
 # Beats 49%
 class Solution:
