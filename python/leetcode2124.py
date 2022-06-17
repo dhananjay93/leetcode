@@ -15,4 +15,3 @@ class Solution:
         if s.count('b') == 0:
             return True
         return b_min >= a_max
-
