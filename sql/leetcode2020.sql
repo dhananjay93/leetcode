@@ -1,0 +1,14 @@
+--Tags ORDER BY, WINDOW, AGGREGATE
+--https://leetcode.com/problems/number-of-accounts-that-did-not-stream/
+--beats 42%
+
+SELECT 
+    COUNT(*) AS ACCOUNTS_COUNT
+FROM SUBSCRIPTIONS 
+WHERE ACCOUNT_ID IN 
+(SELECT 
+    ACCOUNT_ID 
+    FROM STREAMS 
+    WHERE YEAR(STREAM_DATE) = 2020
+)
+AND YEAR(START_DATE) IN (2020,2021) AND YEAR(END_DATE) IN (2021)
