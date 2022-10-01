@@ -1,6 +1,6 @@
---Tags aggregate, order by 
---https://leetcode.com/problems/fix-product-name-format/description/
---beats 32%
+--Tags CTE,TIMESTAMPDIFF
+--https://leetcode.com/problems/users-that-actively-request-confirmation-messages/description/
+--beats 66%
 
 WITH CTE AS
 (
